@@ -1,4 +1,5 @@
 import Adafruit_DHT
+from time import sleep
 
 DHT_SENSOR = Adafruit_DHT.DHT22
 DHT_PIN = 4
@@ -10,6 +11,7 @@ while True:
             print("Temp={0:0.1f}*C  Humidity={1:0.1f}%".format(temperature, humidity))
         else:
             print("Failed to retrieve data from humidity sensor")
+        sleep(2)
     except KeyboardInterrupt:
 		print("Quit")
 
