@@ -1,4 +1,5 @@
 import Adafruit_DHT
+from sys import exit
 from time import sleep
 
 DHT_SENSOR = Adafruit_DHT.DHT22
@@ -14,5 +15,6 @@ while True:
         sleep(2)
     except KeyboardInterrupt:
         print("Quit")
+        exit()
 
 		
