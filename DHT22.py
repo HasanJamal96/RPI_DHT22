@@ -2,7 +2,7 @@ import Adafruit_DHT
 from time import sleep
 
 DHT_SENSOR = Adafruit_DHT.DHT22
-DHT_PIN = 4
+DHT_PIN = 17
 
 while True:
 	try:
